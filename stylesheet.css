@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body { 
+    background: url("bg.jpg") no-repeat fixed center;
+    margin: 0px;
+}
+
+header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+.btns {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+button { 
+    font-size: 16px;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+figure img{ 
+    border: solid 5px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+figcaption {
+    display: block;
+    text-align: justify;
+}
+
+p {
+    font-size: large;
+}
+
+.btns button:hover {
+    background-color: gray;
+    color: black;
+}
+
+/* For devices less than 1000px wide */
+@media (min-width:769px) and (max-width:999px){
+    body{ 
+        display: flex;
+        
+    }
+    /*header {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    */
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+/* For devices less than 768px wide */
+@media only screen and (max-width:768px){
+    h1 {
+        text-align: center;
+    }
+    
+    .btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #images {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    figcaption {
+        display:block;
+        text-align: justify;
+    }
+
+ }
